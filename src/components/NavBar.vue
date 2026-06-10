@@ -5,7 +5,7 @@
       <img class="mark" src="../assets/fit-logo.svg" alt="FIT" />
       <span class="brand-text">
         <strong>CodeBlock</strong>
-
+        <small class="brand-text">визуальный интерпретатор</small>
       </span>
     </RouterLink>
 
@@ -27,8 +27,8 @@ export default { name: 'NavBar' };
   justify-content: space-between;
   gap: 16px;
   padding: 10px 20px;
-  background: #110b0c;
-  border-bottom: 1px solid #3a1418;
+  background: #0b0809;
+  border-bottom: 1px solid #ff0000;
 }
 .brand {
   display: flex;
@@ -49,11 +49,11 @@ export default { name: 'NavBar' };
 }
 .brand-text strong {
   font-size: 18px;
-  color: #f5eeee;
+  color: #ff0000;
 }
 .brand-text small {
   font-size: 12px;
-  color: #b08a8c;
+  color: #ffffff;
 }
 .nav-links {
   display: flex;
@@ -63,12 +63,12 @@ export default { name: 'NavBar' };
   padding: 7px 14px;
   border-radius: 8px;
   text-decoration: none;
-  color: #d3bcbe;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 600;
 }
 .nav-links a:hover {
-  background: #1f1214;
+  background: #fd0025;
   color: #fff;
 }
 .nav-links a.router-link-active {
