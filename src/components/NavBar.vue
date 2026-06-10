@@ -5,7 +5,7 @@
       <img class="mark" src="../assets/fit-logo.svg" alt="FIT" />
       <span class="brand-text">
         <strong>CodeBlock</strong>
-
+        <small class="brand-text">визуальный интерпретатор</small>
       </span>
     </RouterLink>
 
@@ -49,11 +49,11 @@ export default { name: 'NavBar' };
 }
 .brand-text strong {
   font-size: 18px;
-  color: #f5eeee;
+  color: #ff0000;
 }
 .brand-text small {
   font-size: 12px;
-  color: #b08a8c;
+  color: #ffffff;
 }
 .nav-links {
   display: flex;
