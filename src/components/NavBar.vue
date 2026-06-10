@@ -2,7 +2,7 @@
 <template>
   <header class="navbar">
     <RouterLink to="/" class="brand">
-      <span class="mark"></span>
+      <img class="mark" src="../assets/fit-logo.svg" alt="FIT" />
       <span class="brand-text">
         <strong>CodeBlock</strong>
 
@@ -27,8 +27,8 @@ export default { name: 'NavBar' };
   justify-content: space-between;
   gap: 16px;
   padding: 10px 20px;
-  background: #0f1822;
-  border-bottom: 1px solid #26333f;
+  background: #110b0c;
+  border-bottom: 1px solid #3a1418;
 }
 .brand {
   display: flex;
@@ -38,10 +38,9 @@ export default { name: 'NavBar' };
   color: inherit;
 }
 .mark {
-  width: 28px;
-  height: 28px;
-  border-radius: 7px;
-  background: #3bbca9;
+  width: 30px;
+  height: auto;
+  display: block;
 }
 .brand-text {
   display: flex;
@@ -50,11 +49,11 @@ export default { name: 'NavBar' };
 }
 .brand-text strong {
   font-size: 18px;
-  color: #e7eef5;
+  color: #f5eeee;
 }
 .brand-text small {
   font-size: 12px;
-  color: #8da2b5;
+  color: #b08a8c;
 }
 .nav-links {
   display: flex;
@@ -64,16 +63,17 @@ export default { name: 'NavBar' };
   padding: 7px 14px;
   border-radius: 8px;
   text-decoration: none;
-  color: #b9c8d6;
+  color: #d3bcbe;
   font-size: 14px;
   font-weight: 600;
 }
 .nav-links a:hover {
-  background: #182532;
+  background: #1f1214;
   color: #fff;
 }
 .nav-links a.router-link-active {
-  background: #1c2a38;
+  background: #2c0f12;
   color: #fff;
+  box-shadow: inset 2px 0 0 var(--accent-hi, #d83440);
 }
 </style>

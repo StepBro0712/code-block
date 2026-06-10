@@ -34,7 +34,7 @@ export default {
   props: {
     list: { type: Array, required: true },
     nested: { type: Boolean, default: false },
-    rail: { type: String, default: '#2a3a47' },
+    rail: { type: String, default: '#3a2630' },
   },
   data() {
     return { ed: useEditor(), sid: 's' + (++_sid) };

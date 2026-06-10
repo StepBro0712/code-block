@@ -15,7 +15,7 @@
           Перетащите сюда блоки слева, чтобы собрать алгоритм.<br />
           Или загрузите готовый пример из меню «Примеры…».
         </div>
-        <BlockSlot :list="program" rail="#2a3a47" />
+        <BlockSlot :list="program" rail="#3a2630" />
       </main>
 
       <Inspector />
