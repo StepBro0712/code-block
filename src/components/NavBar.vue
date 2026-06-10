@@ -4,8 +4,8 @@
     <RouterLink to="/" class="brand">
       <span class="mark"></span>
       <span class="brand-text">
-        <strong>Codeblock</strong>
-        <small>визуальный интерпретатор алгоритмов</small>
+        <strong>CodeBlock</strong>
+
       </span>
     </RouterLink>
 
@@ -30,7 +30,8 @@ export default { name: 'NavBar' };
   background: #0f1822;
   border-bottom: 1px solid #26333f;
 }
-.brand { display: flex;
+.brand {
+  display: flex;
   align-items: center;
   gap: 12px;
   text-decoration: none;
