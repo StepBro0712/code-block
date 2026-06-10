@@ -41,13 +41,28 @@ export default { name: 'AboutView' };
   color: #d7e2ec;
   line-height: 1.6;
 }
-.about h1 { color: #fff; margin-bottom: 8px; }
-.about h2 { color: #fff; margin-top: 28px; }
+.about h1 {
+  color: #fff;
+  margin-bottom: 8px;
+}
+.about h2 {
+  color: #fff;
+  margin-top: 28px;
+}
 .about code {
   font-family: "JetBrains Mono", ui-monospace, monospace;
-  background: #16212c; padding: 1px 6px; border-radius: 5px; color: #9ad0ff;
+  background: #16212c;
+  padding: 1px 6px;
+  border-radius: 5px;
+  color: #9ad0ff;
 }
-.about ul { padding-left: 20px; }
-.about li { margin: 6px 0; }
-.hint { color: #8da2b5; }
+.about ul {
+  padding-left: 20px;
+}
+.about li {
+  margin: 6px 0;
+}
+.hint {
+  color: #8da2b5;
+}
 </style>

@@ -5,7 +5,9 @@
     --site-bg: #0e141b;
     --site-text: #e7eef5;
 }
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 html, body { margin: 0; min-height: 100%; }
 body {
     font-family: var(--sans);
@@ -15,5 +17,9 @@ body {
             radial-gradient(900px 500px at -10% 110%, #15202b 0, transparent 55%),
             var(--site-bg);
 }
-#app { min-height: 100vh; }
-a { color: inherit; }
+#app {
+    min-height: 100vh;
+}
+a {
+    color: inherit;
+}

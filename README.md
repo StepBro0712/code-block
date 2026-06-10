@@ -21,20 +21,6 @@ node interpreter.test.mjs     # 21 тест, все проходят
 
 ## Что на что ссылается
 
-```
-index.html                      → <script type="module" src="/src/main.js">
-  └─ src/main.js                → createApp(App).use(router); import './assets/codeblock.css'
-       ├─ src/App.vue           → <NavBar/> <RouterView/> <Footer/>
-       ├─ src/router/index.js   → '/' → MainView, '/about' → AboutView
-       ├─ src/components/NavBar.vue
-       ├─ src/components/Footer.vue
-       └─ src/views/MainView.vue
-            └─ components/codeblock/CodeBlockEditor.vue
-                 ├─ EditorToolbar.vue   (Запуск/Отладка/Шаг/Стоп, файлы, примеры)
-                 ├─ BlockPalette.vue    (палитра блоков слева)
-                 ├─ BlockSlot.vue  ⇄ BlockNode.vue   (рекурсивные блоки)
-                 └─ Inspector.vue       (статус, переменные, консоль)
-```
 
 Общие данные и логика вынесены в обычные модули, которые импортируются где нужно:
 
@@ -46,24 +32,6 @@ index.html                      → <script type="module" src="/src/main.js">
   drag-and-drop, движок запуска/отладки, проверка ошибок, сохранение/загрузка.
 - `src/assets/codeblock.css` — все стили редактора (под `.codeblock`, чтобы не
   конфликтовать с остальным сайтом).
-
-## Если вставлять в свой проект
-
-У тебя уже есть `src/components/NavBar.vue`, `Footer.vue`, `views/…` и роутер.
-Можно перенести по частям:
-
-1. Скопируй `src/interpreter.js`, `src/blocks.js`, `src/composables/useEditor.js`,
-   `src/assets/codeblock.css` и папку `src/components/codeblock/`.
-2. В `main.js` добавь `import './assets/codeblock.css';`.
-3. В нужном view (например `EditsView.vue` или `MainView.vue`) подключи редактор:
-   ```vue
-   <script>
-   import CodeBlockEditor from '../components/codeblock/CodeBlockEditor.vue';
-   export default { components: { CodeBlockEditor } };
-   </script>
-   <template><CodeBlockEditor /></template>
-   ```
-4. Свои `NavBar.vue` / `Footer.vue` оставляй — они независимы.
 
 ## Соответствие заданию (кратко)
 

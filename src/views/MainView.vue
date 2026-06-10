@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style scoped>
-.view-editor { padding: 16px; }
+.view-editor {
+  padding: 16px;
+}
 </style>

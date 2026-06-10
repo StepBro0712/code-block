@@ -32,5 +32,7 @@ export default {
   color: #8da2b5;
   font-size: 13px;
 }
-.copy { color: #5d7385; }
+.copy {
+  color: #5d7385;
+}
 </style>
