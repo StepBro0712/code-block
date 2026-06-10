@@ -25,5 +25,7 @@ export default {
   display: flex;
   flex-direction: column;
 }
-.app-main { flex: 1; }
+.app-main {
+  flex: 1;
+}
 </style>

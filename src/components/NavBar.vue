@@ -30,19 +30,17 @@ export default { name: 'NavBar' };
   background: #0f1822;
   border-bottom: 1px solid #26333f;
 }
-.brand {
-  display: flex;
+.brand { display: flex;
   align-items: center;
   gap: 12px;
   text-decoration: none;
   color: inherit;
 }
 .mark {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  background: conic-gradient(from 140deg, #2dd4bf, #5b9bff, #a78bfa, #fb7185, #2dd4bf);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, .08) inset;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: #3bbca9;
 }
 .brand-text {
   display: flex;

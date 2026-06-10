@@ -3,10 +3,6 @@
   <div class="codeblock">
     <header class="cb-topbar">
       <EditorToolbar />
-      <div class="cat-pill">
-        <span class="dot" :style="{ background: 'var(--run)' }"></span>
-        <span>Шагов: <b>{{ exec.steps }}</b></span>
-      </div>
     </header>
 
     <div class="cb-body">
@@ -40,7 +36,6 @@ export default {
   data() { return { ed: useEditor() }; },
   computed: {
     program() { return this.ed.state.program; },
-    exec() { return this.ed.state.exec; },
   },
 };
 </script>
