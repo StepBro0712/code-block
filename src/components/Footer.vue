@@ -19,8 +19,8 @@ export default {
 
 <style scoped>
 .footer {
-  background: #110b0c;
-  border-top: 1px solid #3a1418;
+  background: #0b0809;
+  border-top: 1px solid #ff0000;
   padding: 12px 20px;
 }
 .footer-inner {
@@ -29,10 +29,10 @@ export default {
   gap: 8px 18px;
   align-items: center;
   justify-content: space-between;
-  color: #b08a8c;
+  color: #ffffff;
   font-size: 13px;
 }
 .copy {
-  color: #7d5a5c;
+  color: #7e7e7e;
 }
 </style>

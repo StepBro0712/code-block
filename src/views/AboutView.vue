@@ -38,7 +38,7 @@ export default { name: 'AboutView' };
   max-width: 760px;
   margin: 0 auto;
   padding: 32px 20px;
-  color: #e6d8d8;
+  color: #ffffff;
   line-height: 1.6;
 }
 .about h1 {
@@ -52,14 +52,14 @@ export default { name: 'AboutView' };
   padding-left: 10px;
 }
 .about b {
-  color: #f3a9ad;
+  color: #ff0000;
 }
 .about code {
   font-family: "JetBrains Mono", ui-monospace, monospace;
-  background: #1f1416;
+  background: #ffffff;
   padding: 1px 6px;
   border-radius: 5px;
-  color: #f0888e;
+  color: #000000;
 }
 .about ul {
   padding-left: 20px;
@@ -68,6 +68,6 @@ export default { name: 'AboutView' };
   margin: 6px 0;
 }
 .hint {
-  color: #b08a8c;
+  color: #616161;
 }
 </style>
